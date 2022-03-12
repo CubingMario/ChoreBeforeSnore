@@ -1,81 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% extends "layout.html" %}
-{% block title %}
-Home
-{% endblock %}
-{% block main %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEdu</title>
 
-{% if session.user_id %}
+    <!-- Link -->
+    <link rel="stylesheet" href="index.css"/>
+</head>
 
-<main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-          <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">EasyTasks</h1>
-            <p class="lead fw-normal">Communicate with your students easily.</p>
-            <a class="btn btn-outline-dark" href="/tasks">Create Tasks</a> <br />  <br/>
-            <a class="small text-muted" href="/contact">Facing any problems? Contact us </a>
-          </div>
-          <div class="product-device shadow-sm d-none d-md-block"></div>
-          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+<body>
+<!-- Preloader -->
+<div></div>
+
+<!-- Nav -->
+<nav class="nav">
+    <div class="split-left">
+        <h1>EcoEdu</h1>
+        <div class="menu">
+            <a href="#" class="menu-link active">Home</a>
+            <a href="Todolist.html" class="menu-link">To-Do List</a>
+            <a href="#" class="menu-link">Task Tracker</a>
         </div>
-      
-        
-        
-      </main>
-    
-      <section id="about3">
-        <div class="container">
-          <div class="row justify-content-md-around justify-content-center align-items-center">
-               <div class="col-11 col-md-5 my-3">
-                    <h1 class="text-title mb-3"  style="color:#1DB9C3" >Simplify Learning</h1>
-                    <p class="text-muted mt-2 fs-5"> EasyTasks was developed to answer a
-                       major challenge that students face: How to manage tasks to do their best
-                    </p>
-               </div>
-               <div class="col-11 col-md-5 my-3">
-                <img src="static/remember.svg/" alt="" class="w-100 img-cover">
-           </div>
-          </div>
-      </div>
-      </section>
-    
+    </div>
 
+    <div class="split-right">
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Signup</button>
+        <script src="script.js"></script>
+    </div>
+</nav>
 
-{% else %}
-
+<!-- Main -->
 <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-          <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 fw-normal">EasyTasks</h1>
-            <p class="lead fw-normal">Communicate with your students easily.</p>
-            <a class="btn btn-outline-dark" href="/register">Sign up for free</a> <br />  <br/>
-            <a class="small text-muted" href="/login">Already have an account? log in</a>
-          </div>
-          <div class="product-device shadow-sm d-none d-md-block"></div>
-          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <section class="wrapper-inner">
+        <div class="left-pane">
+            <h1>Learn how to save the environment step by step</h1>
+            <p>Take your first step on learning how to save the environment. It is never too late to start!</p>
         </div>
-      
-        
-        
-      </main>
-    
-      <section id="about3">
-        <div class="container">
-          <div class="row justify-content-md-around justify-content-center align-items-center">
-               <div class="col-11 col-md-5 my-3">
-                    <h1 class="text-title mb-3"  style="color:#1DB9C3" >Simplify Learning</h1>
-                    <p class="text-muted mt-2 fs-5"> EasyTasks was developed to answer a
-                       major challenge that students face: How to manage tasks to do their best
-                    </p>
-               </div>
-               <div class="col-11 col-md-5 my-3">
-                <img src="static/remember.svg/" alt="" class="w-100 img-cover">
-           </div>
-          </div>
-      </div>
-      </section>
-    
+        <div class="right-pane"></div>
+    </section>
+</main>
 
-      {% endif %}
+<!-- Footer -->
+<footer></footer>
+</body>
 
-{% endblock %}
+</html>
