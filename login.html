@@ -1,55 +1,57 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}
-Log In
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restup</title>
 
-{% block main %}
+    <!-- Link -->
+    <link rel="stylesheet" href="logsign.css"/>
+</head>
 
-<br>
+<body>
+<!-- Preloader -->
+<div></div>
 
-<section class="vh-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex align-items-center justify-content-center h-100">
-        <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="img-fluid" alt="Phone image">
+<!-- Nav -->
+<nav class="nav">
+    <div class="split-left">
+        <h1>EcoEdu</h1>
+        <div class="menu">
+            <a href="#" class="menu-link active">Home</a>
+            <a href="#" class="menu-link">Task Tracker</a>
         </div>
-        <div class="col-md-5 col-lg-5 col-xl-5 offset-xl-1" id="box">
-
-          <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
-
-    <form action="{{ url_for('login') }}" method="POST">
-        <fieldset>
-            <div class="form-group, mt-4 mb-3">
-              <label class="form-label" for="Username">Username</label>
-                <input autocomplete="off" autofocus class="form-control" name="username"type="text" />
-            </div>
-
-            <br>
-            <div class="form-group, mb-3">
-              <label class="form-label" for="password">Password</label>
-                <input class="form-control" name="password" type="password" />
-            </div>
-
-            <br> 
-
-            <div class="form-group, mb-3">
-              <label class="form-label" for="email">Email</label>
-                <input class="form-control" name="email" placeholder="email" type="email" />
-            </div>
-
-            <br>
-
-            <button class="btn btn-dark" style="margin-bottom:350px " type="submit">Log In</button>
-            
-        </fieldset>
-    </form>
-
-              
-        </div>
-      </div>
     </div>
-  </section>
 
+    <div class="split-right">
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Signup</button>
+        <script src="assets/js/home/index.js"></script>
+    </div>
+</nav>
 
-{% endblock %}
+<!-- Main -->
+<main>
+    <div id="aut01" class="modal">
+        <span onclick="window.location.href = 'index.html'" class="close" title="Close Modal">x</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Login</h1>
+                <p>Please enter your email and password</p>
+                <hr>
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" placeholder="Enter Email" name="email" required><br>
+
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                <div class="clearfix">
+                    <button type="button" onclick="window.location.href = 'index.html'" class="cancelbtn">Cancel</button>
+                    <button type="submit" onclick="window.location.href = 'welcome.html'" class="signupbtn">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
