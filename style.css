@@ -1,0 +1,347 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', 'Futura';
+}
+body{
+  overflow-x: hidden;
+  font: 'Futura';
+}
+.header .content-box{
+  font:'Futura';
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  height: 100vh;
+}
+.menu{
+  display: inline-flex;
+   font:'Futura';
+}
+
+.menu img{
+  height: 35px;
+  margin: 20px 0 0 110px;
+  cursor: pointer;
+   font:'Futura';
+}
+
+.menu button{
+  padding: 5px 20px;
+  background: #ff4d73;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  position: absolute; 
+  right: 10%;
+  top: 5%;
+   transition: .5s;
+   font:'Futura';
+}
+
+.menu button .bi{
+  margin-right: 10px;
+   font:'Futura';
+}
+.banner-text{
+  width: 80%;
+  color: #fff;
+  margin: 16% auto 0; 
+  text-align: center;
+   font:'Futura';
+}
+
+.banner-text h2{
+  margin-top: 50px;
+  font-size: 64px;
+   font:'Futura';
+}
+
+.banner-text p{
+  font-size: 14px;
+  margin: 20px 0 50px;
+  font: 'Futura';
+}
+
+.banner-text a{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #ff4d73;
+  display:block;
+  padding: 10px;
+  width: 180px;
+  margin: auto;
+  background: #ff4d73;
+  transition: .5s;
+  font: 'Futura';
+}
+
+.banner-text a:hover{
+  background: transparent;
+  font: 'Futura';
+}
+
+/*--Service--*/
+.content-box{
+  background: #f4f3ff;
+  height: 100%;  
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  padding-top: 100px;
+  font: 'Futura';
+}
+
+h1::after{
+  content:'';
+  background: #ff4d73;
+  display: block; 
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+  
+}
+
+.services .icon{
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 18px;
+  height: 70px;
+  width: 70px; 
+  border: 1px solid #ff4d73;
+  border-radius: 50%;
+  color: #ff4d73;
+  font: 'Futura';
+}
+
+.services p{
+  font-size: 12px;
+  margin-top: 10px;
+  color: #777;
+  padding: 20px;
+  font: 'Futura';
+}
+
+.services span{
+  color: #ff4d73;
+  transition:.5s;
+  font: 'Futura';
+}
+
+.services .col-md-3:hover{
+  background: #ff4d73;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+  transition:.5s;
+  font: 'Futura';
+}
+
+.services .col-md-3:hover .icon{
+  border: 1px solid #fff;
+  color:#fff;
+  font: 'Futura';
+}
+.services .col-md-3:hover p{
+  color:#fff;
+  font: 'Futura';
+}
+.services .col-md-3:hover span{
+  color:#fff;
+  font: 'Futura';
+}
+
+/*--Features--*/
+.feature h2{
+  margin-top:100px;
+  margin-left:absolute;
+  font: 'Futura';
+}
+
+.feature h2::after{
+  content:'';
+  background: #ff4d73;
+  display: block; 
+  height: 3px;
+  width: 100px;
+  margin: 20px auto 50px;
+  position:absolute;
+  left: 17px;
+  font: 'Futura';
+}
+
+.feature ul{
+  margin-top: 30px;
+  margin-left: 50px;
+  list-style-type: none;
+  font: 'Futura';
+}
+
+.feature ul li{
+  line-height: 40px;
+  font-size: 14px;
+  position: relative;
+  font: 'Futura';
+}
+
+.feature ul li::after {
+  content:'';
+  height: 7px;
+  width: 7px;
+  background: #ff4d73;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: -25px;
+  font: 'Futura';
+}
+
+.feature .col-md-6 img{
+  margin-top: 100px;
+  margin-right:100px;
+  font: 'Futura';
+}
+
+/*--footer--*/
+.footer h1{
+  padding-top: 50px;
+  font: 'Futura';
+}
+
+.contact-form{
+  padding: 15px;
+  font: 'Futura';
+}
+
+.form-control{
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  font: 'Futura';
+}
+
+::placeholder{
+  font-size: 12px;
+  font: 'Futura';
+}
+
+.contact-form button{
+  border: none !important;
+  background: #ff4d73 !important;
+  box-shadow: none !important; 
+  border-radius: 0;
+  font: 'Futura';
+}
+
+.contact-info .follow{
+  background-color: #fff;
+  padding: 8px;
+  margin: 15px;
+  font: 'Futura';
+}
+
+.contact-info .bi{
+  margin: 10px;
+  font-size: 20px !important;
+  color: #ff4d73 !important;
+  font-weight: bold;
+  padding-right: 20px;
+  font: 'Futura';
+}
+
+.contact-info span{
+  font-size: 14px;
+  font: 'Futura';
+}
+
+.copyright{
+  text-align: center;
+  font-size: 14px;
+  font: 'Futura';
+}
+
+.footer hr{
+  margin-top: 50px;
+  background: #ff4d73;
+  font: 'Futura';
+}
+
+.service, .feature, .footer{
+  margin-top: 10%;
+  font: 'Futura';
+}
+
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+  font: 'Futura';
+}
+
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100px;
+  font: 'Futura';
+}
+
+@keyframes bubble{
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+    font: 'Futura';
+  }
+    
+    50%{
+    opacity: 1;
+      font: 'Futura';
+  }
+    70%{
+    opacity: 1;
+      font: 'Futura';
+  }
+    100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+      font: 'Futura';
+  }
+}
+
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+  font: 'Futura';
+}
+.bubbles img:nth-child(2){
+  animation-delay: 1s;
+  font: 'Futura';
+}
+.bubbles img:nth-child(3){
+  animation-delay: 3s;
+  width: 25px;
+  font: 'Futura';
+}
+.bubbles img:nth-child(4){
+  animation-delay: 4.5s;
+  font: 'Futura';
+}
+.bubbles img:nth-child(5){
+  animation-delay: 3s;
+  font: 'Futura';
+}
+.bubbles img:nth-child(6){
+  animation-delay: 6s;
+  width: 20px;
+  font: 'Futura';
+}
+.bubbles img:nth-child(7){
+  animation-delay: 7s;
+  width: 35px;
+  font: 'Futura';
+}
