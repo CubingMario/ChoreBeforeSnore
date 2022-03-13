@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family={{font}}:400,700" rel="stylesheet" type="text/css">
+    <title>Post card for Chore Before Snore</title>
+    <style>
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        width: 6.25in;
+        height: 4.25in;
+        padding: 0;
+        margin: 0;
+        /* your background image should have dimensions of 1875x1275 pixels. */
+        background-image: url('{{main_photo}}'), url('{{main_photos}}');
+        background-size: 2.75in 3.10in, 2in 3.25in;
+        background-repeat: no-repeat, repeat-x;
+      }
+      /* do not put text outside of the safe area */
+      #safe-area {
+        position: absolute;
+        width: 5.875in;
+        height: 3.875in;
+        left: 0.1875in;
+        top: 0.1875in;
+      }
+      #logobox {
+        width: 1.75in;
+        height: 1.25in;
+        position: absolute;
+        top: 3in;
+        background-color: white;
+      }
+      #banner {
+        width: 4.5in;
+        height: 1.25in;
+        position: absolute;
+        top: 3in;
+        left: 1.75in;
+        background-color: #1285af;
+      }
+      #logo {
+        height: 1.05in;
+        position: absolute;
+        bottom: 0;
+        left: 0.1in;
+      }
+      #heading {
+        font-family: '{{font}}';
+        font-weight: 700;
+        font-size: .25in;
+        text-transform: uppercase;
+        position: absolute;
+        left: 1.85in;
+        top: 3.1in;
+        color: black;
+      }
+      #subheading {
+        font-family: '{{font}}';
+        font-weight: 400;
+        font-size: .12in;
+        text-transform: none;
+      }
+    </style>
+    </head>
+
+    <body>
+      <div id="logobox"></div>
+      <div id="banner"></div>
+      <!-- do not put text outside of the safe area -->
+      <div id="safe-area">
+    
+        <!-- your logo here! -->
+        <img src="{{logo}}" id="logo">
+    
+        <div id="heading">
+          {{heading}}
+          <div id="subheading">
+            {{subheading}}
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
